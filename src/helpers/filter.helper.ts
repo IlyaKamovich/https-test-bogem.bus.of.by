@@ -5,21 +5,23 @@ import reverse from 'lodash/reverse';
 import { IOffer, Value } from '../store/data/slice';
 
 const getFilterByKey = (offers: IOffer[], key: keyof IOffer, title: string) => {
-    const uniqueOffersByKey = uniqBy(offers, (offer) => offer[key]);
+  const uniqueOffersByKey =
+    key !== 'color'
+      ? uniqBy(offers, (offer) => offer[key])
+      : uniqBy(offers, (offer) => offer[key]).sort((a, b) => b.color.length - a.color.length);
 
-    console.log(uniqueOffersByKey);
+  const filterItems = map(uniqueOffersByKey, (uniqueOfferByKey) => {
+    return {
+      value: uniqueOfferByKey[key] as Value,
+      disabled: false,
+    };
+  });
 
-    const filterItems = map(uniqueOffersByKey, (uniqueOfferByKey) => {
-        return {
-            value: uniqueOfferByKey[key] as Value,
-            disabled: false,
-        };
-    });
-    const reversedItems = reverse(filterItems);
-    const filters = key === 'size' ? orderBy(reversedItems, ['value'], 'asc') : reversedItems;
+  const reversedItems = reverse(filterItems);
+  const filters = key === 'size' ? orderBy(reversedItems, ['value'], 'asc') : reversedItems;
+  const filter = { title, filters };
 
-    const filter = { title, filters };
-    return filter;
+  return filter;
 };
 
 export { getFilterByKey };

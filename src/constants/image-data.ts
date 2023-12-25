@@ -1,18 +1,17 @@
 export const imageData = {
-    Черный: 'images/1/1.png',
-    Черный1: 'images/1/2.png',
-    Черный2: 'images/1/3.png',
-    Черный3: 'images/1/4.png',
-    Черный4: 'images/1/5.png',
-
-    'Серый с разноцветной подошвой': 'images/2/1.png',
-    'Серый с разноцветной подошвой1': 'images/2/2.png',
-
-    'Черный с разноцветной подошвой': 'images/3/1.png',
-    'Черный с разноцветной подошвой1': 'images/3/2.png',
-    'Черный с разноцветной подошвой2': 'images/3/3.png',
-
-    Серый: 'images/4/1.png',
-    Серый1: 'images/4/2.png',
-    Серый2: 'images/4/3.png',
+  Серый: 'images/colors/1.webp',
+  Серый1: 'images/colors/2.webp',
+  Серый2: 'images/colors/4.webp',
+  Серый3: 'images/colors/5.webp',
+  Серый4: 'images/colors/6.webp',
+  Серый5: 'images/colors/8.webp',
+  Коричневый: 'images/colors/9.webp',
+  Коричневый1: 'images/colors/10.webp',
+  Коричневый2: 'images/colors/11.webp',
+  Коричневый3: 'images/colors/12.webp',
+  Коричневый4: 'images/colors/13.webp',
+  Зеленый: 'images/colors/14.webp',
+  Зеленый1: 'images/colors/15.webp',
+  Зеленый2: 'images/colors/16.webp',
+  Зеленый3: 'images/colors/17.webp',
 };
