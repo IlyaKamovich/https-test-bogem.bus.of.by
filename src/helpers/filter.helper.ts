@@ -1,5 +1,4 @@
 import map from 'lodash/map';
-import orderBy from 'lodash/orderBy';
 import uniqBy from 'lodash/uniqBy';
 import reverse from 'lodash/reverse';
 import { IOffer, Value } from '../store/data/slice';
