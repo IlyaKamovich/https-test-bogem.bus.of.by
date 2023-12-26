@@ -7,7 +7,7 @@ const Feedback = () => {
         <b className="options__rating-numb">4.9</b>
         <div className="options__rating-star"></div>
         <a href="#revs" className="options__rating-size">
-          3729 оценок, 94 отзыва
+          6429 оценок, 117 отзывов
         </a>
       </div>
     </div>

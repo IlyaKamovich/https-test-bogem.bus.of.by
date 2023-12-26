@@ -13,7 +13,7 @@ const InfoBlock = () => {
         <img src={selectedImage} alt="shoes" />
       </div>
       <div className="info">
-        <div className="title">Обувь мужская дышащая</div>
+        <div className="title">Богемное платье</div>
         <OldPrice />
         <CurrentPrice />
       </div>

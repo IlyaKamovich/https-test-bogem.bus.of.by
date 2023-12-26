@@ -107,13 +107,6 @@ const OrderModal = () => {
               externalId: foundOffer?.externalId,
             },
           },
-          {
-            initialPrice: 0,
-            quantity: 1,
-            offer: {
-              externalId: 'ortoped-stelki-blr',
-            },
-          },
         ],
       });
 
@@ -137,7 +130,7 @@ const OrderModal = () => {
   return (
     <>
       {contextHolder}
-      <Modal title="Обувь мужская дышащая" open={isOpen} onOk={onCloseModal} onCancel={onCloseModal} footer={null}>
+      <Modal title="Богемное платье" open={isOpen} onOk={onCloseModal} onCancel={onCloseModal} footer={null}>
         <div className="modal-header">
           <div className="images">
             <img src={selectedImage} alt="shoes" />
